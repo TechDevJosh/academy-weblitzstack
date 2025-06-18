@@ -550,7 +550,7 @@ const WaitlistFormSection = () => {
                 <textarea
                   id="reason"
                   name="reason"
-                  rows="3"
+                  rows={3}
                   placeholder="Optional: What's the #1 thing you want to build?"
                   onChange={handleChange}
                   value={formData.reason}
