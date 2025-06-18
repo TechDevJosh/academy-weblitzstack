@@ -34,7 +34,7 @@ const TinkerersIcon = () => (
 const BelieversIcon = () => (
   <h3 className="text-xl font-bold mb-2">🤝 Believers in Open Education</h3>
 );
-const ChevronDown = ({ className }) => (
+const ChevronDown = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
