@@ -569,7 +569,7 @@ const WaitlistFormSection = () => {
                   type="text"
                   id="honeypot"
                   name="honeypot"
-                  tabIndex="-1"
+                  tabIndex={-1}
                   value={formData.honeypot}
                   onChange={handleChange}
                 />
