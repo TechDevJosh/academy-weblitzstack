@@ -52,6 +52,8 @@ const ChevronDown = ({ className }: { className?: string }) => (
 );
 
 // --- Animation Variants for Framer Motion ---
+import { easeOut } from 'framer-motion';
+
 const sectionFadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -59,7 +61,7 @@ const sectionFadeIn = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut', // ✅ THIS is valid in Framer Motion and passes TS
+      ease: easeOut, // ✅ This is the correct way
     },
   },
 };
