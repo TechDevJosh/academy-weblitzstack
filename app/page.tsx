@@ -483,7 +483,11 @@ const WaitlistFormSection = () => {
       setStatus('success');
     } catch (error) {
       setStatus('error');
-      setErrorMessage(error.message);
+      if (error instanceof Error) {
+        setErrorMessage(error.message);
+      } else {
+        setErrorMessage('An unexpected error occurred.');
+      }
     }
   };
 
